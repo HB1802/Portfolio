@@ -1,0 +1,40 @@
+import './globals.css';
+import type { Metadata } from 'next';
+import { Inter, Playfair_Display } from 'next/font/google';
+import { ThemeProvider } from '@/components/theme-provider';
+
+const inter = Inter({ 
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
+
+const playfair = Playfair_Display({ 
+  subsets: ['latin'],
+  variable: '--font-playfair',
+});
+
+export const metadata: Metadata = {
+  title: 'DJ Lisa - Wedding DJ Services',
+  description: 'Create dance floor magic for your special day with DJ Lisa',
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
+      <body className="bg-background text-foreground antialiased" suppressHydrationWarning>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem={false}
+          storageKey="dj-theme"
+        >
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  );
+}
