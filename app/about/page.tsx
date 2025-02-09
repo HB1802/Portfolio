@@ -28,11 +28,11 @@ export default function About() {
               </div>
               <div className="grid grid-cols-3 gap-4 pt-4">
                 <div className="p-4 bg-neutral-900/50 rounded-lg text-center">
-                  <div className="font-serif text-2xl">5+</div>
+                  <div className="font-serif text-2xl">3+</div>
                   <div className="text-sm text-neutral-400">Years Exp.</div>
                 </div>
                 <div className="p-4 bg-neutral-900/50 rounded-lg text-center">
-                  <div className="font-serif text-2xl">50+</div>
+                  <div className="font-serif text-2xl">10+</div>
                   <div className="text-sm text-neutral-400">Projects</div>
                 </div>
                 <div className="p-4 bg-neutral-900/50 rounded-lg text-center">

@@ -3,7 +3,7 @@ export function SocialLinks() {
     <footer className="py-8 border-t border-neutral-800">
       <div className="flex justify-center space-x-8">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/HB1802"
           className="text-sm text-neutral-400 hover:text-foreground transition-colors"
           target="_blank"
           rel="noopener noreferrer"
@@ -11,7 +11,7 @@ export function SocialLinks() {
           GITHUB
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/harshit-bisht-a90ab4246/"
           className="text-sm text-neutral-400 hover:text-foreground transition-colors"
           target="_blank"
           rel="noopener noreferrer"
@@ -19,12 +19,12 @@ export function SocialLinks() {
           LINKEDIN
         </a>
         <a
-          href="https://twitter.com/yourusername"
+          href="https://x.com/Harshit92053261"
           className="text-sm text-neutral-400 hover:text-foreground transition-colors"
           target="_blank"
           rel="noopener noreferrer"
         >
-          TWITTER
+          X
         </a>
       </div>
     </footer>

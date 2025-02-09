@@ -14,8 +14,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'DJ Lisa - Wedding DJ Services',
-  description: 'Create dance floor magic for your special day with DJ Lisa',
+  title: 'Harshit Bisht - Software Development Services',
+  description: 'Create development magic for your special projects with Harshit',
 };
 
 export default function RootLayout({

@@ -1,7 +1,9 @@
+
 "use client";
 
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { Loader2 } from 'lucide-react';
 
 interface FormData {
   firstName: string;
@@ -29,16 +31,16 @@ export function ContactForm() {
 
     try {
       await emailjs.send(
-        'service_gmail', // Replace with your EmailJS service ID
-        'template_contact', // Replace with your EmailJS template ID
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         {
-          to_email: 'harshitbisht02@gmail.com',
+          to_name: 'Harshit',
           from_name: `${formData.firstName} ${formData.lastName}`,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        'your_public_key' // Replace with your EmailJS public key
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
       
       setSubmitStatus('success');
@@ -136,7 +138,7 @@ export function ContactForm() {
             onChange={handleChange}
             required
             rows={4}
-            className="w-full px-4 py-2 bg-neutral-800 rounded-lg focus:ring-2 focus:ring-neutral-700 outline-none"
+            className="w-full px-4 py-2 bg-neutral-800 rounded-lg focus:ring-2 focus:ring-neutral-700 outline-none resize-none"
           />
         </div>
 
@@ -155,9 +157,16 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full px-6 py-3 bg-foreground text-background font-medium rounded-lg hover:bg-neutral-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full px-6 py-3 bg-foreground text-background font-medium rounded-lg hover:bg-neutral-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
         >
-          {isSubmitting ? 'Sending...' : 'Send Message'}
+          {isSubmitting ? (
+            <>
+              <Loader2 className="w-4 h-4 animate-spin" />
+              Sending...
+            </>
+          ) : (
+            'Send Message'
+          )}
         </button>
       </form>
     </div>

@@ -37,7 +37,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-medium">GitHub</div>
-                    <div className="text-neutral-400">github.com/yourusername</div>
+                    <div className="text-neutral-400">https://github.com/HB1802</div>
                   </div>
                 </div>
                 
@@ -47,7 +47,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="font-medium">LinkedIn</div>
-                    <div className="text-neutral-400">linkedin.com/in/yourusername</div>
+                    <div className="text-neutral-400">https://www.linkedin.com/in/harshit-bisht-a90ab4246/</div>
                   </div>
                 </div>
               </div>

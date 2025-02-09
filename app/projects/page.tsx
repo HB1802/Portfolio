@@ -6,25 +6,23 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    name: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with Next.js, TypeScript, and Stripe integration",
-    tech: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-    github: "https://github.com/yourusername/project1",
+    name: "Resell Rally",
+    description: "Full-stack ticket reselling platform with real-time updates",
+    tech: ["React", "TypeScript", "django", "SQLite","Razorpay"],
+    github: "https://github.com/HB1802/Resell_Rally.git",
     live: "https://project1.com"
   },
   {
-    name: "Task Management App",
-    description: "Real-time collaborative task management application with live updates",
-    tech: ["React", "Node.js", "Socket.io", "MongoDB"],
-    github: "https://github.com/yourusername/project2",
-    live: "https://project2.com"
+    name: "Youtube Audio text Summarizer",
+    description: "A chrome extension to improve YouTube content accessibility",
+    tech: ["Python", "NLP", "Hugging Face Transformers"],
+    github: "https://github.com/HB1802/Youtube-Audio-text-Summarizer.git",
   },
   {
-    name: "AI Content Generator",
-    description: "AI-powered content generation tool using OpenAI's GPT-3 API",
-    tech: ["Python", "FastAPI", "React", "OpenAI"],
-    github: "https://github.com/yourusername/project3",
-    live: "https://project3.com"
+    name: "H Server",
+    description: "A proxy Server handling simultaneous client connections with minimal latency",
+    tech: ["C Programming language"],
+    github: "https://github.com/HB1802/H_Server.git",
   }
 ];
 
